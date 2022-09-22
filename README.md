@@ -65,6 +65,3 @@ After the code doesn’t find any lines or traffic signs, it will start looking 
 ### Stopping after the three laps are done:
 When the variable called corner_counter is equal to twelve (three laps are finished and the robot should stop) a timer is started and after 1.25 seconds have passed since the timer has started, the robot will stop. During these 1.25 seconds the code will resume normally in order to not collide with any traffic signs or walls in the last section.
 
-### this team is still inferior to the pythos 2
-
-
