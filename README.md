@@ -35,14 +35,14 @@
     Specifications of this battery: https://makerselectronics.com/product/beston-li-ion-rechargeable-battery-18650-3000mah
     ![image](https://user-images.githubusercontent.com/107484564/191769715-0ce22ef5-fef4-4065-8b3c-f8ed5e4db1bf.png)
 ## Electromechanical Components Schematic:
-![image](https://user-images.githubusercontent.com/107484564/191770231-3a950014-3575-4467-9432-b5805f5a2ab0.png)
+![image](https://user-images.githubusercontent.com/56698318/191783968-d04b70e0-0e6a-4d87-8c61-03c3c4a15eea.png)
 ## Mechanical Design:
 ### Body:
-![image](https://user-images.githubusercontent.com/107484564/191770637-7058d60f-5f77-4a85-a6da-ebaa82fba54e.png)
+![Body](https://user-images.githubusercontent.com/56698318/191784822-b26f3efe-a254-46fd-bd41-e0083143811d.png)
 ### Steering Mechanism:
-![image](https://user-images.githubusercontent.com/107484564/191770768-b961b780-b752-4d8c-8706-39cffff3205b.png)
+![Steering_Mechanism](https://user-images.githubusercontent.com/56698318/191784857-dd1bcb9d-09d6-416a-8199-0df89250b3c8.png)
 ### Power Transmission Mechanism:
-![image](https://user-images.githubusercontent.com/107484564/191770866-7a867be6-5b30-45d5-80a6-b4c40953373e.png)
+![Power_Transmission_Mechanism](https://user-images.githubusercontent.com/56698318/191784846-6a9f51e0-a76e-47ec-8366-21b04e2b66bf.png)
 ## Detailed Program Functioning:
 The code consists of five main parts:
 - Start of trial
@@ -64,3 +64,7 @@ Detecting traffic signs has the second highest priority in our code. We use a us
 After the code doesn’t find any lines or traffic signs, it will start looking for the black walls and try to make the robot as close to the center as possible. It will start searching for the wall in two regions of interest (ROIs), a left ROI for the left wall and a right ROI for the right wall. The areas within the ROIs are compared and the servo motor is directed towards the smaller area. Additionally, there is a third ROI that is found in the center of the frame that is used to prevent the collision of the robot with the walls by seeing if the area in the ROI is larger than a certain constant, and if that is true then the robot will go backwards while also inversing the direction from right to left and vice versa.
 ### Stopping after the three laps are done:
 When the variable called corner_counter is equal to twelve (three laps are finished and the robot should stop) a timer is started and after 1.25 seconds have passed since the timer has started, the robot will stop. During these 1.25 seconds the code will resume normally in order to not collide with any traffic signs or walls in the last section.
+
+
+
+
